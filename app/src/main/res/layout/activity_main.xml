@@ -7,7 +7,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
+    <fragment
+        class="com.example.fragmentpractice.fragments.FirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:tag="firstFrag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 
