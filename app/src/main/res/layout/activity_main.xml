@@ -8,14 +8,27 @@
     tools:context=".MainActivity">
 
     <fragment
+        android:id="@+id/fragment"
         class="com.example.fragmentpractice.fragments.FirstFragment"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:tag="firstFrag"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <fragment
+        android:tag="secondFrag"
+        android:id="@+id/secondFrag"
+        class="com.example.fragmentpractice.fragments.SecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

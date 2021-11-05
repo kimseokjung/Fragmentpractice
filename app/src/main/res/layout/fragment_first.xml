@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FF0000">
+    android:background="#009688">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
@@ -36,10 +36,20 @@
             android:layout_height="wrap_content"
             android:text="위 문구 변경"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnSecondFrag"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvContent" />
+        <Button
+            android:id="@+id/btnSecondFrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="열려랏!"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnChangeText" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
